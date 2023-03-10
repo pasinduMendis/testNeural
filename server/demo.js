@@ -24,9 +24,10 @@ console.log(name,email,phone,companyName)
   const d = decodeURIComponent(companyName[1])
   // const d = decodeURIComponent(companySize[1])
   
-
+  console.log("DB :",process.env.MONGODB_URI_DEPLOYC)
+  
   try {
-    mongoose.connect("mongodb+srv://testNeural:testNeural@cluster0.pq8pdre.mongodb.net/?retryWrites=true&w=majority", {
+    mongoose.connect(process.env.MONGODB_URI_DEPLOYC, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
       useFindAndModify: false,
