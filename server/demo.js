@@ -26,7 +26,7 @@ console.log(name,email,phone,companyName)
   
 
   try {
-    mongoose.connect(process.env.MONGODB_URI_DEPLOYC, {
+    mongoose.connect("mongodb+srv://testNeural:testNeural@cluster0.pq8pdre.mongodb.net/?retryWrites=true&w=majority", {
       useNewUrlParser: true,
       useUnifiedTopology: true,
       useFindAndModify: false,
